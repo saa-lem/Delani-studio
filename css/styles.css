@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> development
 body {
   text-align: center;
   font-family: 'Oswald', serif;
@@ -106,8 +109,14 @@ img {
 }
 
 .portfolio-sec {
+<<<<<<< HEAD
   padding: 100px;
   margin: 200px;
+=======
+  padding: 2px;
+  text-align: center;
+  width:25%
+>>>>>>> development
 }
 
 .col-3 {
@@ -132,6 +141,7 @@ img {
   vertical-align: middle;
 }
 
+<<<<<<< HEAD
 .form-control {
   background: transparent;
   border-color: white;
@@ -141,6 +151,10 @@ img {
 
 .sr-only {
   color: white;
+=======
+textarea {
+  background: transparent;
+>>>>>>> development
 }
 
 /*FOOTER*/
@@ -156,4 +170,9 @@ img {
 .social-li {
   display: inline-block;
   list-style: none;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> development
