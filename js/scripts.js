@@ -1,37 +1,90 @@
-$(document).ready(function () {
-  $(".design-img").click(function () {
-    $(".design-text").toggle();
-    $(".design-img").hide();
+//UserInterface Logic
+$(document).ready(function() {
+  $("div#design").click(function() {
+    $("div#content").toggle();
+    $("div#design").toggle();
   });
-  $(".development-img").click(function () {
-    $(".development-text").toggle();
-    $(".development-img").hide();
+  $("div#content").click(function() {
+    $("div#content").toggle();
+    $("div#design").toggle();
   });
-  $(".product-img").click(function () {
-    $(".product-text").toggle();
-    $(".product-img").hide();
+  $("div#dev").click(function() {
+    $("div#dev-content").toggle();
+    $("div#dev").toggle();
   });
-  $(".design-text").click(function () {
-    $(".design-img").toggle();
-    $(".design-text").hide();
+  $("div#dev-content").click(function() {
+    $("div#dev-content").toggle();
+    $("div#dev").toggle();
   });
-  $(".development-text").click(function () {
-    $(".development-img").toggle();
-    $(".development-text").hide();
+  $("div#product").click(function() {
+    $("div#prod-content").toggle();
+    $("div#product").toggle();
   });
-  $(".product-text").click(function () {
-    $(".product-img").toggle();
-    $(".product-text").hide();
-  });
-});
-
-$(document).ready(function () {
-  $(".col-md-3").mouseover(function () {
-    $(".col-md-3").css("border-size", "5px");
+  $("div#prod-content").click(function() {
+    $("div#prod-content").toggle();
+   $("div#product").toggle();
   });
 
-  function getname() {
-    var name = document.getElementById("name");
-    alert(name + "we have received your message. Thank you for reaching out to us.");
-  }
+  $("#col-1").hover(function() {
+    $("#text1").fadeTo("slow",1);
+    $("#photo1").fadeTo("slow",0.4);
+    },function() {
+      $("#text1").fadeTo("slow",0);
+      $("#photo1").fadeTo("slow",1);
+    });
+  $("#col-2").hover(function() {
+    $("#text2").fadeTo("slow",1);
+    $("#photo2").fadeTo("slow",0.4);
+    },function() {
+      $("#text2").fadeTo("slow",0);
+      $("#photo2").fadeTo("slow",1);
+    });
+  $("#col-3").hover(function() {
+    $("#text3").fadeTo("slow",1);
+    $("#photo3").fadeTo("slow",0.4);;
+    },function() {
+      $("#text3").fadeTo("slow",0);
+      $("#photo3").fadeTo("slow",1);
+    });
+  $("#col-4").hover(function() {
+    $("#text4").fadeTo("slow",1);
+    $("#photo4").fadeTo("slow",0.4);
+    },function() {
+      $("#text4").fadeTo("slow",0);
+      $("#photo4").fadeTo("slow",1);
+    });
+  $("#col-5").hover(function() {
+    $("#text5").fadeTo("slow",1);
+    $("#photo5").fadeTo("slow",0.4);
+    },function() {
+      $("#text5").fadeTo("slow",0);
+      $("#photo5").fadeTo("slow",1);
+  });
+  $("#col-6").hover(function() {
+    $("#text6").fadeTo("slow",1);
+    $("#photo6").fadeTo("slow",0.4);
+    },function() {
+      $("#text6").fadeTo("slow",0);
+      $("#photo6").fadeTo("slow",1);
+    });
+  $("#col-7").hover(function() {
+    $("#text7").fadeTo("slow",1);
+    $("#photo7").fadeTo("slow",0.4);
+    },function() {
+      $("#text7").fadeTo("slow",0);
+      $("#photo7").fadeTo("slow",1);
+    });
+  $("#col-8").hover(function() {
+    $("#text8").fadeTo("slow",1);
+    $("#photo8").fadeTo("slow",0.4);
+    },function() {
+      $("#text8").fadeTo("slow",0);
+      $("#photo8").fadeTo("slow",1);
+    });
+    //Business Logic
+    $("form").submit(function() {
+      var name= $("input#name").val();
+      alert("We've received your message "+name+". Thank you for contacting us");
+      event.preventDefault();
+    });
 });
